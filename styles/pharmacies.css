@@ -1,0 +1,54 @@
+.pharmacies__container {
+  display: grid;
+  padding: 8px;
+  gap: 32px;
+}
+
+.pharmacies__container .card {
+  width: 100%;
+  padding-left: 16px;
+  border-radius: 12px;
+  border-left: 16px solid var(--primary-color);
+  background-color: white;
+  box-shadow: 4px 4px 2px rgba(200, 200, 200, 0.6);
+}
+
+.pharmacies__container .card .image {
+  display: flex;
+  justify-content: center;
+}
+
+.pharmacies__container .card .image img {
+  width: 90%;
+  min-width: 250px;
+  max-width: 320px;
+}
+
+.pharmacies .card p {
+  font-size: 1.4rem;
+  padding: 4px 0;
+}
+
+.pharmacies .card .name {
+  font-size: 1.7rem;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+.pharmacies .card .address::before {
+  content: "Dirección: ";
+}
+
+.pharmacies .card .phone::before {
+  content: "Teléfono: ";
+}
+
+.pharmacies .card .schedule::before {
+  content: "Horarios: ";
+}
+
+@media (min-width: 700px){
+  .pharmacies__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

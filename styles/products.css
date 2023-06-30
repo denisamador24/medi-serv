@@ -1,0 +1,58 @@
+.products {
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+}
+
+.products__container {
+  max-width: 900px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  row-gap: 16px;
+  column-gap: 8px;
+}
+.products__container .card {
+  width: 100%;
+  min-height: 250px;
+  border-radius: 12px;
+  background-color: white;
+  overflow: hidden;
+}
+.card__image {
+  width: 100%;
+}
+.card__name {
+  padding: 0 8px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.card__price {
+  padding: 0 8px;
+  margin-top: 16px;
+  font-size: 2.2rem;
+  font-family: "Lato Regular";
+}
+.card__price::after {
+  content: " C$";
+}
+.card__add-product {
+  width: 80%;
+  min-width: 100px;
+  height: 40px;
+  margin-top: 32px;
+  margin-left: 8px;
+  margin-bottom: 16px;
+  border: none;
+}
+
+@media (min-width: 700px){
+  .products__container {
+    padding-left: 32px;
+    padding-right: 32px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,59 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="./style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles/aside-menu.css">
+  <link rel="stylesheet" href="./styles/theme.blue.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/products.css">
+  <link rel="stylesheet" href="./styles/product.details.css">
+  <link rel="stylesheet" href="./styles/pharmacies.css">
+  <link rel="stylesheet" href="./styles/car.css">
+  <link rel="stylesheet" href="./styles/info-pharmacy.css">
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <img src="./img/logo.jpg" alt="Logo">
-      <h1 class="logo__title">Medi-<span>serv</span></h1>
-    </div>
-  </header>
+  <!-- Project -->
+  <div class="container">
+    <header>
+      <div class="header__container">
+        <label for="menu-open" class="menu-icon">
+          <img src="./assets/icon/menu.png" alt="menu">
+        </label>
+        <div class="logo">
+          <img src="./assets/img/logo.jpg" alt="Logo">
+          <h1 class="logo__title">Medi-<span>serv</span></h1>
+        </div>
 
-  <section class="download">
-    <div class="download__backgroud">
-      <article>
-      <div class="modal__content--slider">
-        <input type="radio" name="slider-1" id="radio-1" checked>
-        <input type="radio" name="slider-1" id="radio-2">
-        <input type="radio" name="slider-1" id="radio-3">
-        <div class="cards">
-          <label for="radio-1" id="card-1" class="card">
-            <img src="./img/medi-1.jpg" alt="">
-          </label>
-          <label for="radio-2" id="card-2" class="card">
-            <img src="./img/medi-2.jpg" alt="">
-          </label>
-          <label for="radio-3" id="card-3" class="card">
-            <img src="./img/medi-3.jpg" alt="">
-          </label>
+        <div class="search">
+          <img class="search__icon" src="./assets/icon/buscar.png" alt="lupa">
+          <input class="search__input" type="text" placeholder="¿Qué estás buscando?">
+        </div>
+        <div class="car">
+          <spam class="car__count">0</spam>
+          <img class="car__icon" src="./assets/icon/carro.png" alt="carrito">
+          <span class="car__text">Carrito</span>
+        </div>
+      </div>
+    </header>
+
+    <aside class="aside-menu">
+      <input type="radio" name="menu" id="menu-open">
+      <input type="radio" name="menu" id="menu-close" checked>
+      <div class="menu">
+        <label for="menu-close" class="menu__back">
+          <img src="./assets/icon/back.png" alt="atras">
+        </label>
+        <div class="menu__list">
+          <ul>
+            <li id="li-main-pharmacy">
+              <input type="radio" name="farmacia" id="main-pharfacy" checked>
+              <label for="main-pharfacy">
+                <span>Farmacia Los Angeles</span>
+                <img src="./assets/icon/info.png" alt="info">
+              </label>
+            </li>
+            <li id="li-other-pharmacy">
+              <input type="radio" name="farmacia" id="other-pharmacies">
+              <label for="other-pharmacies">Otras Farmacias</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <article class="info-main-pharmacy hide">
+      <div class="info-main-pharmacy__container">
+        <img class="close" src="./assets/icon/close.png" alt="cerrar">
+        <div class="card">
+          <div class="image">
+            <img src="./assets/img/angeles.jpg" alt="foto">
+          </div>
+          <div class="data">
+            <p class="name">Farmacia los ángeles</p>
+            <p class="address">Dirección: Cementerio del Esquipulas 200 MTS al sur</p>
+            <p class="phone">Teléfono: 84880646</p>
+            <p class="schedule">Horarios: 24/7 no tiene horario específico</p>
+          </div>
         </div>
       </div>
     </article>
 
-    </div>
-    <div class="download__main">
-      <h1>Descarga <br> Medi-serv</h1>
-      <p>Nuestra app dará a  conocer los tipos de medicamentos qué ofrecen como también podrá hacer consultas sobre cualquier tipo de medicamento, te permitirá ver la ubicaciones de otra farmacia cercana a ti.</p>
-      <button type="submit">Descargar Medi-serv para Android</button>
+    <main>
 
-    </div>
+      <section class="products">
+        <div class="products__container">
+          <!--
+          <article class="card">
+            <div class="card__item">
+              <img class="card__image" src="./assets/img/sukrol.png" alt="">
+              <p class="card__name">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p class="card__price">260</p>
+            </div>
+            <button type="submit" class="card__add-product primary-button">Añadir al carrito</button>
+          </article>
+         -->
+        </div>
+      </section>
 
-    
-  </section>
-  
+      <section class="product-details hide">
+        <article class="card">
+          <p class="card__name"></p>
+          <div>
+            <img class="card__image" src="./assets/img/sukrol.png" alt="">
+          </div>
+          <p class="card__price"></p>
+          <p class="card__description"></p>
+        </article>
+        <div class="float">
+          <div>
+            <p class="float__price"></p>
+            <button class="float__add-car primary-button">Añadir al carrito</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="car-section hide">
+        <div class="card">
+          <p class="card__price">0</p>
+          <button class="primary-button card__button" type="submit">Tramitar compra</button>
+        </div>
+        <article class="products">
+          <p class="products__total-articles">0</p>
+          <div>
+            <ul>
+              <!--
+              <li>
+                <div>
+                  <div class="products__img">
+                    <img src="./assets/img/sukrol.png" alt="">
+                  </div>
+                  <p class="products__name">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                  <div class="products__close">
+                    <img src="./assets/icon/close.png" alt="cerrar">
+                  </div>
+                  <p class="products__price">250</p>
+                </div>
+              </li>
+            -->
+            </ul>
+          </div>
+        </article>
+
+        <div class="total">
+          <div>
+            <span>Total Productos</span>
+            <span class="total__price">0</span>
+          </div>
+          <div class="envio-container">
+            <div class="totat__text">
+              <span>Envio</span>
+              <span class="total__envio">0</span>
+            </div>
+            <div class="envio-towns">
+              <p>Seleccione  la comarca</p>
+
+              <input type="radio" name="envio" id="envio-angeles">
+              <label for="envio-angeles">Los Ángeles y Esquipulas</label>
+
+              <input type="radio" name="envio" id="envio-moyogalpa">
+              <label for="envio-moyogalpa">San José y Moyogalpa</label>
+              
+              <input id="envio-flor" type="radio" name="envio">
+              <label for="envio-flor">La flor</label>
+            </div>
+          </div>
+          <div>
+            <span>Total</span>
+            <span class="total__price-total">0</span>
+          </div>
+          <button class="primary-button" type="submit">Tramitar compra</button>
+        </div>
+      </section>
+
+      <section class="pharmacies hide">
+        <div class="pharmacies__container">
+          <div class="card">
+            <div class="image">
+              <img src="./assets/img/moyogalpa.jpg" alt="foto">
+            </div>
+            <p class="name">Farmacia moyogalpa</p>
+            <p class="address">Contigo a la ferretería Juárez</p>
+            <p class="phone">8917 9038 | 5718 6043</p>
+            <p class="schedule">De lunes a sábado de 8 a m a 4:30</p>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./assets/img/stFe.jpg" alt="foto">
+            </div>
+            <p class="name">Farmacia Santa Fe</p>
+            <p class="address">frente a la alcaldía municipal de moyogalpa</p>
+            <p class="phone">8702 9175</p>
+            <p class="schedule"></p>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./assets/img/jany.jpg" alt="foto">
+            </div>
+            <p class="name">Farmacia jany </p>
+            <p class="address">Frente al BAC Moyogalpa</p>
+            <p class="phone">57517531</p>
+            <p class="schedule">De las 8:00 AM a las 5:00 Pm de lunes a viernes</p>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./assets/img/stAna.jpg" alt="foto">
+            </div>
+            <p class="name">Farmacia santa Ana</p>
+            <p class="address">de la cancha municipal de moyogalpa una cuadra al este </p>
+            <p class="phone">89227036</p>
+            <p class="schedule">De las 6:00 AM alas 10:00 PM de lunes a domingo</p>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./assets/img/avellan.jpg" alt="foto">
+            </div>
+            <p class="name">Farmacia Avellán</p>
+            <p class="address">contigo al hospital</p>
+            <p class="phone">85298502</p>
+            <p class="schedule">8:00 AM a 7:00 PM de lunes a sábado</p>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./assets/img/morena.jpg" alt="foto">
+            </div>
+            <p class="name">Farmacia la morenita</p>
+            <p class="address">frente al parquesito las cruces . Frente a la escuela las cruces </p>
+            <p class="phone">86012701</p>
+            <p class="schedule">lunes a viernes de 8:00AM a 8:00PM. Sábado de 9:00AM a 8:00PM. Domingo 9:30 AM a 1 de la
+              tarde</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./product/product.service.js"></script>
+  <script src="./product/product.data.js"></script>
+  <script src="./view/car-products.js"></script>
+  <script src="./view/header.js"></script>
+  <script src="./product/car-products.service.js"></script>
+  <script src="./view/products.js"></script>
+  <script src="./view/product-details.js"></script>
+  <script src="./view/pharmacies.js"></script>
+  <script src="./view/menu.js"></script>
   <script src="./main.js"></script>
-
+  <script src="./navigation.js"></script>
 </body>
 
 </html>

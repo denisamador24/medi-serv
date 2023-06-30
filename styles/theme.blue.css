@@ -1,0 +1,5 @@
+:root {
+  --primary-color: var(--light-blue);
+  --text-color: var(--dark-purple);
+  --secondary-color: var(--dark-blue);
+}

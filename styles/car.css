@@ -1,0 +1,189 @@
+.car-section {
+  margin: 4px;
+  padding-bottom: 78px; 
+  display: grid;
+  gap: 8px;
+}
+
+.car-section .card {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: white;
+
+}
+
+.car-section .card__price {
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+
+
+}
+
+.car-section .card button,
+.car-section .total button {
+  width: 100%;
+  height: 40px;
+}
+
+.car-section .products__total-articles {
+  font-size: 1.8rem;
+  color: black;
+}
+
+.car-section .products__total-articles::before {
+  content: "(";
+}
+
+.car-section .products__total-articles::after {
+  content: ") Artículos en tu carrito";
+}
+
+.car-section .products {
+  padding: 16px;
+  padding-bottom: 88px;
+  border-radius: 12px;
+  background-color: white;
+  display: block;
+}
+
+.car-section .products ul {
+  list-style: none;
+}
+
+.car-section .products ul li {
+  margin: 16px 0;
+}
+
+.car-section .products ul li>div {
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  border: 1px solid gray;
+}
+
+.car-section .products__img{
+  width: 26%;
+}
+
+.car-section  .products__img img {
+  width: 100%;
+}
+
+.car-section .products__name {
+  width: 70%;
+  font-size: 1.6rem;
+  padding: 16px;
+}
+
+.car-section .products__close {
+  width: 4%;
+  margin-top: 32px;
+}
+
+.car-section .products__close img {
+  width: 100%;
+  min-width: 12px;
+  max-width: 32px;
+}
+
+.car-section .products__price {
+  width: 100%;
+  padding-top: 8px;
+  font-size: 1.4rem;
+  font-family: "Lato Regular";
+  color: red;
+}
+
+.car-section .products__price::after {
+  content: " C$";
+}
+
+.car-section .total {
+  margin: 4px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.car-section .total > div {
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: black;
+}
+
+.car-section .total .envio-container {
+  display: block;
+}
+
+.car-section .total .envio-container .totat__text {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: black;
+}
+
+.car-section .total .envio-towns {
+  padding: 16px;
+  display: grid;
+}
+
+.car-section .total .envio-towns p {
+  padding: 16px 0;
+}
+
+.car-section .total .envio-towns input {
+  display: none;
+}
+
+.car-section .envio-towns label {
+  width: 100%;
+  margin: 8px 0;
+  padding: 16px 24px;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.car-section .envio-towns label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.car-section .total .envio-towns input:checked + label {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.car-section .total .envio-towns input:checked + label::before {
+  width: 12px;
+  height: 12px;
+  border: 9px solid white;
+  background-color: var(--primary-color);
+}
+
+.car-section .total > div > span:nth-child(2)::after {
+  content: " C$";
+}
+
+.car-section .total > div:nth-child(3) {
+  margin-top: 8px;
+  border-top: 3px solid black;
+  font-family: "Poppins Bold";
+  font-size: 1.5rem;
+}
+
+.car-section .total button {
+  margin-top: 32px;
+}

@@ -1,0 +1,1 @@
+const pharmaciesSection = document.querySelector('.pharmacies');

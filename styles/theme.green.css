@@ -1,0 +1,5 @@
+:root {
+  --primary-color: var(--green-life);
+  --text-color: var(--green);
+  --secondary-color: var(--blue);
+}
